@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/datePicker.min.css">
+        <script src="./js/jquery-3.2.1.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/datePicker.min.js"></script>
+        <script src="./js/script.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="header">
+                <div class="container text-center">
+                    <button class="menu-toggle btn btn-default"><i class="glyphicon glyphicon-menu-hamburger"></i></button>
+                    <div class="logo">
+                        <a href="index.html"><img src="./img/logo.png" alt=""></a>
+                    </div>
+                </div>
+            </nav>
+            <div class="main container">
+                <main class="content">
+                    <h3 class="page-heading">Add New M.V. info <a class="text-info right" href="mv_listing.html">Back</a></h3>
+                    <div class="tab-pane" aria-labelledby="home-tab">
+                        <form action="" method="post">
+                            <div class="row">
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="mvno" class="form-control" placeholder="M.V. No.">
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="row form-group">
+                                            <div class="col-sm-12">
+                                                <div class="input-group input-append date datePicker">
+                                                    <input type="text" name="tax_upto" placeholder="TAX UPTO" readonly="" class="form-control"/><span class="input-group-addon add-on cPointer"><span class="glyphicon glyphicon-calendar"></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <input type="text" name="tax_upto" class="form-control" placeholder="TAX UPTO"> -->
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="content-cell custombtn-marginright">
+                                            <button id="taxUploadBtn" class="btn btn-default btn-block good-btn">Tax Upload</button>
+                                            <input type="file" name="taxUpload" class="upload-file-input-hide">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="input-group input-append date datePicker">
+                                            <input type="text" placeholder="Insurance UPTO" name="ins" readonly="" class="form-control"><span class="input-group-addon add-on cPointer"><span class="glyphicon glyphicon-calendar"></span></span>
+                                        </div>
+                                    </div>
+                                        <!-- <input type="text" name="ins" class="form-control" placeholder="Ins. Upto"> -->
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="content-cell custombtn-marginright">
+                                            <button id="insUploadBtn" class="btn btn-default btn-block good-btn">Insurance Upload</button>
+                                            <input type="file" name="insUpload" class="upload-file-input-hide">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="input-group input-append date datePicker">
+                                            <input type="text" placeholder="PUC UPTO" name="puc" readonly="" class="form-control"><span class="input-group-addon add-on cPointer"><span class="glyphicon glyphicon-calendar"></span></span>
+                                        </div>
+                                        <!-- <input type="text" name="puc" class="form-control" placeholder="PUC UPTO"> -->
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="content-cell custombtn-marginright">
+                                            <button id="pucUploadBtn" class="btn btn-default btn-block good-btn">PUC Upload</button>
+                                            <input type="file" name="pucUpload" class="upload-file-input-hide">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="input-group input-append date datePicker">
+                                            <input type="text" placeholder="Fitness UPTO" name="puc" readonly="" class="form-control"><span class="input-group-addon add-on cPointer"><span class="glyphicon glyphicon-calendar"></span></span>
+                                        </div>
+                                        <!-- <input type="text" name="fitness" class="form-control" placeholder="Fitness"> -->
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="content-cell custombtn-marginright">
+                                            <button id="fitnessUploadBtn" class="btn btn-default btn-block good-btn">Fitness Upload</button>
+                                            <input type="file" name="fitnessUpload" class="upload-file-input-hide">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="input-group input-append date datePicker">
+                                            <input type="text" placeholder="Authorization UPTO" name="puc" readonly="" class="form-control"><span class="input-group-addon add-on cPointer"><span class="glyphicon glyphicon-calendar"></span></span>
+                                        </div>
+                                        <!-- <input type="text" name="auth" class="form-control" placeholder="Authorization UPTO"> -->
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="content-cell custombtn-marginright">
+                                            <button id="authUploadBtn" class="btn btn-default btn-block good-btn">Authorization Upload</button>
+                                            <input type="file" name="authUpload" class="upload-file-input-hide">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="input-group input-append date datePicker">
+                                            <input type="text" placeholder="Permit UPTO" name="puc" readonly="" class="form-control"><span class="input-group-addon add-on cPointer"><span class="glyphicon glyphicon-calendar"></span></span>
+                                        </div>
+                                        <!-- <input type="text" name="permit" class="form-control" placeholder="Permit UPTO"> -->
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="content-cell custombtn-marginright">
+                                            <button id="permitUploadBtn" class="btn btn-default btn-block good-btn">Permit Upload</button>
+                                            <input type="file" name="permitUpload" class="upload-file-input-hide">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" name="rc" class="form-control" placeholder="RC">
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="content-cell custombtn-marginright">
+                                            <button id="rcUploadBtn" class="btn btn-default btn-block good-btn">RC Upload</button>
+                                            <input type="file" name="rcUpload" class="upload-file-input-hide">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="input-group input-append date datePicker">
+                                            <input type="text" placeholder="G.Tax UPTO" name="puc" readonly="" class="form-control"><span class="input-group-addon add-on cPointer"><span class="glyphicon glyphicon-calendar"></span></span>
+                                        </div>                                        <!-- <input type="text" name="gtax" class="form-control" placeholder="G.Tax UPTO"> -->
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="content-cell custombtn-marginright">
+                                            <button id="gtaxUploadBtn" class="btn btn-default btn-block good-btn">G.Tax Upload</button>
+                                            <input type="file" name="gtaxUpload" class="upload-file-input-hide">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="input-group input-append date datePicker">
+                                            <input type="text" placeholder="P.Tax UPTO" name="puc" readonly="" class="form-control"><span class="input-group-addon add-on cPointer"><span class="glyphicon glyphicon-calendar"></span></span>
+                                        </div>
+                                        <!-- <input type="text" name="ptax" class="form-control" placeholder="P.Tax UPTO"> -->
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="content-cell custombtn-marginright">
+                                            <button id="ptaxUploadBtn" class="btn btn-default btn-block good-btn">P.Tax Upload</button>
+                                            <input type="file" name="ptaxUpload" class="upload-file-input-hide">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="input-group input-append date datePicker">
+                                            <input type="text" placeholder="Speed Gov UPTO" name="puc" readonly="" class="form-control"><span class="input-group-addon add-on cPointer"><span class="glyphicon glyphicon-calendar"></span></span>
+                                        </div>                                        
+                                        <!-- <input type="text" name="speed" class="form-control" placeholder="Speed Gov UPTO"> -->
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="content-cell custombtn-marginright">
+                                            <button id="speedUploadBtn" class="btn btn-default btn-block good-btn">Speed Gov Upload</button>
+                                            <input type="file" name="speedUpload" class="upload-file-input-hide">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="input-group input-append date datePicker">
+                                            <input type="text" placeholder="Meter UPTO" name="puc" readonly="" class="form-control"><span class="input-group-addon add-on cPointer"><span class="glyphicon glyphicon-calendar"></span></span>
+                                        </div>                                        <!-- <input type="text" name="meter" class="form-control" placeholder="Meter UPTO"> -->
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="content-cell custombtn-marginright">
+                                            <button id="meterUploadBtn" class="btn btn-default btn-block good-btn">Meter Upload</button>
+                                            <input type="file" name="meterUpload" class="upload-file-input-hide">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="input-group input-append date datePicker">
+                                            <input type="text" placeholder="Cylinder UPTO" name="puc" readonly="" class="form-control"><span class="input-group-addon add-on cPointer"><span class="glyphicon glyphicon-calendar"></span></span>
+                                        </div>                                        <!-- <input type="text" name="cylinder" class="form-control" placeholder="Cylinder UPTO"> -->
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="content-cell custombtn-marginright">
+                                            <button id="cylinderUploadBtn" class="btn btn-default btn-block good-btn">Cylinder Upload</button>
+                                            <input type="file" name="cylinderUpload" class="upload-file-input-hide">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="">
+                                    <button type="submit" class="btn btn-secondary">Submit Form</button>
+                                    <button type="reset" class="btn btn-danger">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
